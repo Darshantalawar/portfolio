@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Darshankumar Talawar — Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <!-- Lucide icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">DKT</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Contact Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <!-- Animated background orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <!-- Grid overlay -->
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <!-- LEFT -->
+      <div class="hero-left">
+        <p class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          WELCOME TO MY UNIVERSE 🚀
+        </p>
+        <h1 class="hero-heading">
+          Hi, I'm<br/>
+          <span class="gradient-text">DarshanKumar<br/>Talawar</span>
+        </h1>
+        <p class="hero-sub">Full-Stack &amp; AI Developer</p>
+        <p class="hero-desc">
+          CS student at GEC Hassan passionate about building scalable web apps,
+          clean APIs, and products that make a real difference.
+          Turning ideas into code — one commit at a time.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">
+            Explore My Work
+            <i data-lucide="arrow-right" class="btn-icon"></i>
+          </a>
+          <a href="Resume_Darshankt.pdf" class="btn btn-outline">
+            Get Resume
+            <i data-lucide="download" class="btn-icon"></i>
+          </a>
+        </div>
+        <!-- Floating stats -->
+        <div class="hero-stats">
+          <div class="stat-pill">
+            <span class="stat-num">7.7</span>
+            <span class="stat-lbl">CGPA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-pill">
+            <span class="stat-num">1+</span>
+            <span class="stat-lbl">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-pill">
+            <span class="stat-num">2026</span>
+            <span class="stat-lbl">Grad Year</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="hero-right">
+        <div class="profile-wrap">
+          <div class="profile-glow"></div>
+          <div class="profile-ring"></div>
+          <div class="profile-img">
+            <!-- Replace src with your actual photo -->
+            <img src="./profile.jpeg" alt="Darshan">
+          </div>
+          <!-- Floating tech badges -->
+          <div class="float-badge fb-1">
+            <i data-lucide="code-2"></i> Java
+          </div>
+          <div class="float-badge fb-2">
+            <i data-lucide="database"></i> MySQL
+          </div>
+          <div class="float-badge fb-3">
+            <i data-lucide="smartphone"></i> React Native
+          </div>
+          <div class="float-badge fb-4">
+            <i data-lucide="server"></i> Spring Boot
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">About Me</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">Crafting Code<br/><span class="gradient-text">With Purpose</span></h2>
+          <p>I'm Darshankumar Talawar, a Computer Science student at Government Engineering College Hassan. I have strong fundamentals in OOP, Operating Systems, and Computer Networks.</p>
+          <p>My focus is on full-stack development — from crafting responsive UIs to designing robust backend APIs. I love working on projects that solve real-world problems, like KrushiBook, a platform I built to help farmers.</p>
+          <p>Currently seeking a software engineering internship to build scalable distributed systems and deepen my backend expertise.</p>
+          <div class="about-chips">
+            <span class="chip">Problem Solver</span>
+            <span class="chip">Backend Enthusiast</span>
+            <span class="chip">Open Source</span>
+            <span class="chip">Lifelong Learner</span>
+          </div>
+        </div>
+        <div class="about-card glass reveal">
+          <div class="about-card-row">
+            <i data-lucide="graduation-cap" class="about-icon"></i>
+            <div>
+              <p class="about-card-label">Education</p>
+              <p class="about-card-val">B.E Computer Science</p>
+              <p class="about-card-sub">GEC Hassan · CGPA 7.7</p>
+            </div>
+          </div>
+          <div class="about-card-row">
+            <i data-lucide="map-pin" class="about-icon"></i>
+            <div>
+              <p class="about-card-label">Location</p>
+              <p class="about-card-val">Hassan, Karnataka</p>
+              <p class="about-card-sub">India</p>
+            </div>
+          </div>
+          <div class="about-card-row">
+            <i data-lucide="briefcase" class="about-icon"></i>
+            <div>
+              <p class="about-card-label">Availability</p>
+              <p class="about-card-val">Open to Internships</p>
+              <p class="about-card-sub">Backend / Full-Stack</p>
+            </div>
+          </div>
+          <div class="about-card-row">
+            <i data-lucide="heart" class="about-icon"></i>
+            <div>
+              <p class="about-card-label">Interests</p>
+              <p class="about-card-val">Reading &amp; Problem Solving</p>
+              <p class="about-card-sub">Books · Algorithms</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">Skills</div>
+      <h2 class="section-title text-center reveal">My <span class="gradient-text">Arsenal</span></h2>
+      <p class="section-sub text-center reveal">Technologies I work with to build great products</p>
+
+      <div class="skills-grid">
+        <!-- Card 1 -->
+        <div class="skill-card glass reveal">
+          <div class="skill-icon-wrap">
+            <i data-lucide="code-2" class="skill-icon"></i>
+          </div>
+          <h3>Languages</h3>
+          <p>Core programming languages I use to build reliable, performant software.</p>
+          <div class="skill-tags">
+            <span>Java</span>
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="skill-card glass reveal">
+          <div class="skill-icon-wrap">
+            <i data-lucide="layers" class="skill-icon"></i>
+          </div>
+          <h3>Frameworks &amp; Libraries</h3>
+          <p>Frameworks I use to build full-stack and mobile applications efficiently.</p>
+          <div class="skill-tags">
+            <span>Spring Boot</span>
+            <span>React Native</span>
+            <span>Expo</span>
+            <span>Git</span>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="skill-card glass reveal">
+          <div class="skill-icon-wrap">
+            <i data-lucide="database" class="skill-icon"></i>
+          </div>
+          <h3>Database &amp; Tools</h3>
+          <p>Data storage and developer tooling I rely on for backend and DevOps tasks.</p>
+          <div class="skill-tags">
+            <span>MySQL</span>
+            <span>GitHub</span>
+            <span>Expo Go</span>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="skill-card glass reveal">
+          <div class="skill-icon-wrap">
+            <i data-lucide="cpu" class="skill-icon"></i>
+          </div>
+          <h3>CS Fundamentals</h3>
+          <p>Strong theoretical foundation in core computer science concepts.</p>
+          <div class="skill-tags">
+            <span>DSA</span>
+            <span>OOP</span>
+            <span>OS</span>
+            <span>CN</span>
+            <span>DBMS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">Projects</div>
+      <h2 class="section-title text-center reveal">Things I've <span class="gradient-text">Built</span></h2>
+      <p class="section-sub text-center reveal">Real-world projects that solve real-world problems</p>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card glass reveal">
+          <div class="project-img-wrap">
+            <div class="project-img-bg">
+              <div class="project-img-pattern"></div>
+              <span class="project-img-label">KrushiBook</span>
+            </div>
+            <div class="project-badge">Featured</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">KrushiBook</h3>
+            <p class="project-sub">Social Media &amp; E-Commerce for Farmers</p>
+            <p class="project-desc">
+              A cross-platform app empowering farmers to share content, sell products, fertilizers, and rent machinery.
+              Integrated real-time weather updates and a Gemini AI chatbot for agriculture queries.
+            </p>
+            <div class="project-tech">
+              <span>React Native</span>
+              <span>Expo</span>
+              <span>Gemini API</span>
+              <span>Real-time</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-sm btn-primary">
+                <i data-lucide="external-link"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-sm btn-outline">
+                <i data-lucide="github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder project 2 -->
+        <div class="project-card glass reveal">
+          <div class="project-img-wrap">
+            <div class="project-img-bg" style="--proj-hue:200deg">
+              <div class="project-img-pattern"></div>
+              <span class="project-img-label">Project 02</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Your Next Project</h3>
+            <p class="project-sub">Replace with your project title</p>
+            <p class="project-desc">
+              Add your project description here. Describe what problem it solves, key features, and your role in building it.
+            </p>
+            <div class="project-tech">
+              <span>Spring Boot</span>
+              <span>MySQL</span>
+              <span>Java</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-sm btn-primary">
+                <i data-lucide="external-link"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-sm btn-outline">
+                <i data-lucide="github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder project 3 -->
+        <div class="project-card glass reveal">
+          <div class="project-img-wrap">
+            <div class="project-img-bg" style="--proj-hue:300deg">
+              <div class="project-img-pattern"></div>
+              <span class="project-img-label">Project 03</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Another Project</h3>
+            <p class="project-sub">Replace with your project title</p>
+            <p class="project-desc">
+              Add your project description here. Describe what problem it solves, key features, and your role in building it.
+            </p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>HTML/CSS</span>
+              <span>MySQL</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-sm btn-primary">
+                <i data-lucide="external-link"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-sm btn-outline">
+                <i data-lucide="github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">Contact</div>
+      <h2 class="section-title text-center reveal">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="section-sub text-center reveal">Got an opportunity? I'd love to hear from you.</p>
+
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form-wrap glass reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Darshankumar Talawar" required/>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="you@example.com" required/>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea rows="5" placeholder="I'd love to talk about an internship opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message <i data-lucide="send" class="btn-icon"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <p class="contact-tagline">Open to internships, collaborations and interesting conversations.</p>
+
+          <div class="contact-links">
+            <a href="mailto:darshankt2004@gmail.com" class="contact-link glass">
+              <div class="cl-icon"><i data-lucide="mail"></i></div>
+              <div>
+                <p class="cl-label">Email</p>
+                <p class="cl-val">darshankt2004@gmail.com</p>
+              </div>
+              <i data-lucide="arrow-up-right" class="cl-arrow"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/darshankumar-talawar-b685aa2b5/" target="_blank" class="contact-link glass">
+              <div class="cl-icon"><i data-lucide="linkedin"></i></div>
+              <div>
+                <p class="cl-label">LinkedIn</p>
+                <p class="cl-val">Darshankumar</p>
+              </div>
+              <i data-lucide="arrow-up-right" class="cl-arrow"></i>
+            </a>
+            <a href="https://github.com" target="_blank" class="contact-link glass">
+              <div class="cl-icon"><i data-lucide="github"></i></div>
+              <div>
+                <p class="cl-label">GitHub</p>
+                <p class="cl-val">darshankt</p>
+              </div>
+              <i data-lucide="arrow-up-right" class="cl-arrow"></i>
+            </a>
+            <a href="tel:+917411609199" class="contact-link glass">
+              <div class="cl-icon"><i data-lucide="phone"></i></div>
+              <div>
+                <p class="cl-label">Phone</p>
+                <p class="cl-val">+91 74116 09199</p>
+              </div>
+              <i data-lucide="arrow-up-right" class="cl-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">DKT</span>
+        <p>© 2026 Darshankumar Talawar · Built with passion from Hassan, Karnataka</p>
+        <div class="footer-socials">
+          <a href="https://github.com" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="mailto:darshankt2004@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
